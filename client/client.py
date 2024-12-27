@@ -7,7 +7,7 @@ from threading import Thread
 class Client():
     run = False
 
-    def __init__(self, connect:Tuple[str, int]=("192.168.178.100", 6969)) -> None:
+    def __init__(self, connect:Tuple[str, int]=("157.245.149.220", 7001)) -> None:
         signal.signal(signal.SIGINT, self.exit_gracefully)
         signal.signal(signal.SIGTERM, self.exit_gracefully)
         self.stop = False
